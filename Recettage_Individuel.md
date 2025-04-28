@@ -4,101 +4,87 @@
 
 ##### *🧭 Navigation*
 
-- [ ] Le **menu burger ne se referme** pas une fois ouvert.
-- [ ] Le texte de la navbar semble centré mais **n'est pas aligné dans le code** → provoque des soucis en responsif.
-- [ ] La **navigation varie selon les pages** : barre différente entre la page d'accueil et les pages spécifiques.
+- [ ] Le menu burger ne se referme pas automatiquement après ouverture.
+- [ ] Le centrage du texte dans la navbar est mal géré dans le code, ce qui crée des décalages.
+- [ ] La structure de navigation varie selon les pages : manque d'uniformité globale.
 
 ##### *🎨 Design & ergonomie*
 
-- [ ] Le **bouton "Réservez"** devrait renommé en **"En savoir +"**, car il ne déclenche pas de réservation directe.
-- [ ] Animation du logo dans le **footer uniquement**, absente du header → manque de cohérence.
-- [ ] Des **icônes de clic apparaissent sur des images non interactives** → confusion utilisateur.
-- [ ] La **pagination du carrousel** n'est pas intuitive.
+- [ ] Le bouton "Réservez" n'a pas une fonction immédiate de réservation ; il devrait être intitulé "En savoir +" pour plus de clarté.
+- [ ] Le logo animé dans le footer n'a pas d'équivalent dans le header : cela nuit à la cohérence visuelle.
+- [ ] Les images qui ne sont pas des liens affichent une icône de clic, ce qui induit l'utilisateur en erreur.
+- [ ] La pagination du carrousel d'accueil est peu intuitive.
 
 ##### *📱 Responsif et accessibilité*
 
-- [ ] Texte trop petit à **992px**, difficile à lire.
-- [ ] Le **logo déborde** sur la colonne centrale entre 771px et 991px.
-- [ ] Les marges entre les sections sont **inégales**, perturbant la hiérarchie visuelle.
-- [ ] La section "Expérience unique" **n'est pas adaptée au mobile** (576px et moins).
-- [ ] Manque de **boutons adaptés au tactile (tablette)** → risque de "miss click".
-- [ ] **Pas d'adaptation spécifique** pour les bornes de réservation.
+- [ ] En dessous de 992px, le texte dans le header devient trop petit.
+- [ ] Le logo "Gîte Pim" déborde sur la colonne centrale entre 771px et 991px (width forcé à 200px).
+- [ ] Les marges entre les sections sont irrégulières.
+- [ ] La section "Expérience unique" n'est pas adaptée aux écrans mobiles (576px et moins).
+- [ ] Les boutons ne sont pas assez grands pour une utilisation confortable sur tablette.
 
 ##### *🧱 Structure et sémantique*
 
-- [ ] Chaque section a sa propre structure → **manque d'uniformité** globale.
-- [ ] Niveaux de titres non respectés (h1 / h3 mal répartis).
-- [ ] Structure du DOM **nom conforme aux pratiques Bootstrap** (main, container-fluid, container-md mal utilisés).
+- [ ] Manque d'homogénéité entre les structures des sections.
+- [ ] Niveaux de titres non hiérarchisés (h1, h3).
+- [ ] Utilisation incorrecte des structures main, container-fluid, etc., en contradiction avec les conventions Bootstrap.
 
 ##### *✍️ Contenu & rédactionnel*
 
-- [ ] Problèmes de ponctuation : **phrases sans point, à la ligne selon les résolutions.**
-- [ ] Exemples :
-	- "Bungalow vue mer" sans ponctuation.
-	- Citations à la ligne sur certaines résolutions (ex : Billy Gaytes).
+- [ ] Retours à la ligne mal placés (ex. citation Billy Gaytes).
+- [ ] Problèmes de ponctuation selon les résolutions (ponctuation à la ligne, absente, ou déplacée).
 
 ### 🔷 Partie spécifique
 
 ##### *🧭 Navigation*
 
-- [ ] **Navbar incohérente** d'une page à l'autre.
-- [ ] Absence de **retour clair vers l'accueil** sur certaines pages.
+- [ ] La structure de navigation sur la page "Kayak" diffère des autres, rompant l'uniformité du site.
+- [ ] Le bouton de réservation manque de visibilité et de statut clair de CTA (Call to Action).
 
 ##### *🎨 Design global*
 
-- [ ] Le **design n'est pas uniformisé** : chaque module semble indépendant.
-- [ ] Présence d'éléments cassés ou non alignés :
-	- Cartes de présentation inégales.
-	- Sections mal centrées ou écrasées.
-- [ ] Certaines pages (ex : Garderie, Kayak, Bagne) **s'écartent fortement de la charte visuelle globale.**
+- [ ] Le design général de la page ne suit pas la charte graphique ru reste du site.
+- [ ] Carrousel cassé : il ne s'affiche pas correctement ou ne fonctionne pas.
+- [ ] Texte de présentation avec ascenseur inutile : il serait préférable d'ajuster la taille du bloc au contenu.
+- [ ] Le texte est mal amené, manque de hiérarchie visuelle claire.
+- [ ] Les couleurs de boutons ne respectent pas les règles d'accessibilité (contraste insuffisant).
+- [ ] Réservation de kayak : aucune confirmation claire n'est fournie (ni numéro de réservation, ni message utilisateur).
 
 ##### *📱 Responsif & accessibilité*
 
-- [ ] Plusieurs pages sont **cassées entre 681px et 1024px.**
-- [ ] Formulaires ou contenus non accessibles sur mobile.
-- [ ] Carrousels ou images déformées selon les tailles d'écran
+- [ ] Page non responsive : les éléments se chevauchent ou débordent selon la taille de l'écran.
+- [ ] Le design ne s'adapte pas aux écrans mobiles et tablette.
+- [ ] Formulaire peu lisible sur petit écran.
 
 ##### *🧱 Structure et sémantique*
 
-- [ ] Chaque section a sa propre structure → **manque d'uniformité** globale.
-- [ ] Niveaux de titres non respectés (h1 / h3 mal répartis).
-- [ ] Structure du DOM **nom conforme aux pratiques Bootstrap** (main, container-fluid, container-md mal utilisés).
+- [ ] Utilisation de JavaScript non standard pour soumettre les formulaires (manque de clarté et de maintenabilité).
+- [ ] Sémantique HTML non respectée : structure trop libre et non conforme aux attentes d'un site professionnel.
 
-##### *📄 Fonctionnalités des réservations (toutes activités)*
+##### *📄 Fonctionnalité des réservations - Réservation de kayak*
 
-- [ ] **Aucun système unifié de réservation.**
-- [ ] Problèmes récurrents :
-	- **Pas de numéro de réservation généré.**
-	- **Aucune confirmation claire (toast ou message).**
-	- **Aucune validation des champs obligatoires.**
-	- **Possibilité de réserver dans le passé.**
-	- **Date de fin antérieure à la date de début possible.**
-	- **Capacités non respectées** (plus de 15 enfants, repas au-delà des 30 couverts, etc.).
-	- **Saisie libre de données invalides** (ex : 31 novembre).
-	- **Aucune vérification du stock disponible** (chevaux, kayaks, chambres).
-	- **Pas de rechargement automatique du formulaire après validation.**
+- [ ] Il est possible de sélectionner une **heure de fin antérieure à l'heure de début**, entraînant une durée négative.
+- [ ] Il semble impossible de réserver le jour même.
+- [ ] L'interface ne propose pas de solution lorsque le nombre de personnes ne correspondant pas aux kayaks disponibles :
+	- Par exemple : si je choisis 3 personnes, aucune suggestion entre 1 kayak double + 1 simple ou 3 simples.
+- [ ] **Aucun message de validation ou d'erreur** ne s'affiche.
+- [ ] **Aucun numéro de réservation généré.**
+- [ ] L'expérience utilisateur est globalement confuse et incomplète.
 
 ### 🧨 Tableau des bugs
 
 | Problème | Gravité
 | -------- | -------
-| Possibilité de réserver dans le passé | 🔴 Critique
-| Date de fin antérieure à la date de début | 🔴 Critique
-| Pas de confirmation utilisateur (ni message, ni numéro de réservation) | 🔴 Critique
-| Capacité non vérifiée ni décrémentée (chambre, repas, activités) | 🔴 Critique
-| Aucun système centralisé de génération de numéros de réservation | 🔴 Critique
-| Champs obligatoires non validés (réservation validée même vide) | 🔴 Critique
-| Réservations possibles avec des données incohérentes (31/11, durée négative, etc.) | 🔴 Critique
-| Pages de confirmation absentes ou 404 (ex : Bagne) | 🔴 Critique
-| Météo absente ou dysfonctionnelle (non dynamique ou mal intégrée) | 🔴 Critique
-| Design incohérent entre les pages (chartes non respectée) | 🟡 Important
-| Navigation et structure DOM différentes d'une page à l'autre | 🟡 Important
-| Problèmes de responsif sur toutes les résolutions intermédiaires (681px - 1024px) | 🟡 Important
-| Absence d'accessibilité tactile (tablette, bornes) | 🟡 Important
-| Utilisation incorrecte de _class_, _id_, et containers Bootstrap | 🟡 Important
-| Contenu textuel peu homogène : fautes, guillemets inutiles, ponctuation instable | 🟢 Suggestion
-| Citations défilantes trop rapides, sans attribution claire (ex : page Bagne) | 🟢 Suggestion
-| Présentation "type excel" (ex : Garderie) à revoir pour plus de lisibilité | 🟢 Suggestion
+| Réservation avec heure de fin inférieure à l'heure de début (durée négative) | 🔴 Critique
+| Réservation le jour même apparemment impossible | 🔴 Critique
+| Aucun retour utilisateur (confirmation, erreur, ou numéro de réservation) | 🔴 Critique
+| Aucune logique de répartition pour les kayaks selon le nombre de personnes | 🔴 Critique
+| Design non responsif : éléments cassés, ascenseurs, chevauchements | 🔴 Critique
+| Couleurs des boutons non accessibles (contraste insuffisant) | 🟡 Important
+| Utilisation non standard de JavaScript pour les formulaires | 🟡 Important
+| Carrousel cassé | 🟡 Important
+| Texte mal hiérarchisé et mal intégré | 🟢 Suggestion
+| Absence de CTA visible et clair | 🟢 Suggestion
 
 ### ✅ Compétences
 

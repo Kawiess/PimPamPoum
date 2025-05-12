@@ -1,0 +1,27 @@
+/* Mobile styles (par défaut, appliqué aux petites tailles d'écran) */
+@import url('./mobile.css');
+
+/* Tablet styles (à partir de 576px) */
+@media (min-width: 576px) {
+	@import url('./tablette.css');
+}
+
+/* Desktop styles (à partir de 768px) */
+@media (min-width: 768px) {
+	@import url('./desktop.css');
+}
+
+/* Large screen styles (à partir de 1024px) */
+@media (min-width: 1024px) {
+	@import url('./large-screen.css');
+}
+
+
+
+/* Importation des fichiers CSS en fonction de la taille de l'écran */
+/*
+@import url('./mobile.css') screen and (max-width: 575px);
+@import url('./tablette.css') screen and (min-width: 576px) and (max-width: 768px);
+@import url('./desktop.css') screen and (min-width: 769px) and (max-width: 1024px);
+@import url('./large-screen.css') screen and (min-width: 1025px);
+*/

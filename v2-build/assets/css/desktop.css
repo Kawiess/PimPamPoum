@@ -1,0 +1,22 @@
+/* Hero */
+.hero-container {
+	height: 400px;
+}
+
+/* Barre */
+.navbar {
+	position: sticky;
+	top: 0;
+	padding: 20px;
+}
+
+/* Carrousel */
+.carousel-container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.carousel-indicators .dot {
+	width: 15px;
+	height: 15px;
+}

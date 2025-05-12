@@ -1,0 +1,23 @@
+/* Hero */
+.hero-container {
+	height: 500px;
+}
+.hero-title {
+	font-size: 2.5rem;
+}
+
+/* Barre */
+.navbar {
+	padding: 30px;
+	text-align: left;
+}
+
+/* Carrousel */
+.carousel-container {
+	width: 70%;
+	margin: 0 auto;
+}
+.carousel-indicators .dot {
+	width: 20px;
+	height: 20px;
+}

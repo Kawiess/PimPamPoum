@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation Sortie en Kayak</title>
+  <meta name="description" content="Réservez votre sortie en kayak en choisissant la date, le niveau et le nombre de participants.">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+
+  <header class="hero-container">
+    <article class="hero" data-title="Réservez votre sortie" data-image="../../assets/img/kayak.jpg" data-alt="Sortie en kayak">
+      <header>
+        <h1>Réservez votre sortie en kayak</h1>
+      </header>
+    </article>
+  </header>
+
+  <main>
+    <section class="reservation">
+      <h2>Réservez votre sortie en kayak</h2>
+
+      <form action="reservation-kayak-action.php" method="post" aria-labelledby="reservation-form">
+        <fieldset>
+          <legend>Réservation de sortie en kayak</legend>
+          
+          <label for="date">Date :</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="niveau">Niveau :</label>
+          <select id="niveau" name="niveau" required>
+            <option value="debutant">Débutant</option>
+            <option value="intermediaire">Intermédiaire</option>
+            <option value="avance">Avancé</option>
+          </select>
+
+          <label for="personnes">Nombre de participants :</label>
+          <input type="number" id="personnes" name="personnes" min="1" max="10" required>
+
+          <button type="submit" class="btn btn-orange">Réserver</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

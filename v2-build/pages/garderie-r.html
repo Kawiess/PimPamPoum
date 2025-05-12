@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation Garderie</title>
+  <meta name="description" content="Réservez un créneau pour la garderie et assurez la prise en charge de vos enfants.">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+
+  <header class="hero-container">
+    <article class="hero" data-title="Réservez votre créneau" data-image="../../assets/img/garderie.jpg" data-alt="Garderie">
+      <header>
+        <h1>Réservez votre créneau</h1>
+      </header>
+    </article>
+  </header>
+
+  <main>
+    <section class="reservation">
+      <h2>Réservez un créneau pour la garderie</h2>
+
+      <form action="reservation-garderie-action.php" method="post" aria-labelledby="reservation-form">
+        <fieldset>
+          <legend>Réservation de garderie</legend>
+          
+          <label for="date">Date :</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="horaire">Horaire :</label>
+          <input type="time" id="horaire" name="horaire" required>
+
+          <label for="enfants">Nombre d'enfants :</label>
+          <input type="number" id="enfants" name="enfants" min="1" max="10" required>
+
+          <button type="submit" class="btn btn-orange">Réserver</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

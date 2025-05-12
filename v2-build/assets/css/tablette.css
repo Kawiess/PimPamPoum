@@ -1,0 +1,21 @@
+/* Hero */
+.hero-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+}
+
+/* Carrousel */
+.carousel-container {
+	width: 90%;
+	margin: 0 auto;
+}
+.carousel-indicators {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+.carousel-indicators .dot {
+	margin: 0 5px;
+}

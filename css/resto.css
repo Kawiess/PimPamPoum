@@ -73,11 +73,11 @@
 }
 
 .meat {
-  background-image: url('../modules/repas/img-resto/meat.jpg'); 
+  background-image: url('../public/repas/meat.jpg'); 
 }
 
 .seafood {
-  background-image: url('../modules/repas/img-resto/fruits-de-mer-pim.jpeg'); 
+  background-image: url('../public/repas/fruits-de-mer-pim.jpeg'); 
 }
 .specialite-item {
 height: 60vh;

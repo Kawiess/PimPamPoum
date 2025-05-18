@@ -1,4 +1,4 @@
-@import "./../../css/main.css";
+@import "./css/main.css";
 @import url("https://unpkg.com/flickity@2/dist/flickity.min.css");
 
 /* Commun */
@@ -17,7 +17,7 @@ h4 {
 }
 
 /* Bannière HERO */
-.hero {
+.hero2 {
     background-image: url("./banniere.png");
     min-height: 20vh;
     background-position: center;
@@ -111,7 +111,7 @@ h4 {
 }
 
 /* Bouton "call to action" */
-.hero, .resa {
+.hero2, .resa {
     .btn {
         background-color: var(--event);
         color: var(--primary);

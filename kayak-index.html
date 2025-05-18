@@ -12,7 +12,7 @@
 		<link rel="icon" type="image/x-icon" href="./public/logo/logo.ico" />
 		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="stylesheet" href="./css/footer.css">
-		<link rel="stylesheet" media="screen" href="./kayak.css">
+		<link rel="stylesheet" media="screen" href="./css/kayak.css">
 
 		<!-- Styles externes -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
@@ -20,55 +20,47 @@
 		
 		<!-- Composants -->
 		<script src="./component/navbar.js" type="text/javascript" defer></script>
+		<script src="./component/hero-top.js" type="text/javascript" defer></script>
+		<script src="./component/hero-bottom.js" type="text/javascript" defer></script>
 		<script src="./component/footer.js" type="text/javascript" defer></script>
 	</head>
 	<body>
 		<!-- Menu TOP -->
 		<menu-top></menu-top>
-
-		<!-- HERO -->
-		<section class="hero">
-			<h1>KAYAK</h1>
-			<span>
-				<a class="btn" href="./kayak-resa.html" role="button">Page de réservation</a>
-			</span>
-		</section>
+		<hero-top titre="Tout le monde à l'eau" image="./public/kayak/galerie/image-2.jpeg" lien="./kayak-form.html"></hero-top>
 		
 		<!-- Présentation -->
 		<section class="activite not-mobile">
 			<div class="row">
 				<div class="col-3" id="presentation">
+					<br>
 					<h4>Présentation de l'activité</h4>
+					<br>
 					<ul>
 						<li>Horaire : 9h à 16h</li>
+						<br>
 						<li>Kayak simple : 2</li>
+						<br>
 						<li>Kayak double : 3</li>
 					</ul>
-					<div>
-						<p>À l'origine, le kayak est inuit, confectionné avec des membrures ployées, bordées et pontées de peaux, et manœuvré à l'aide d'une pagaie simple ou double.</p>
-						<p>Aujourd'hui, un kayak est réalisé en toile imperméable, matériaux synthétique ou pneumatique et manœuvré avec une pagaie double.</p>
-						<p>À la différence du canoë ou canot, le kayak se pratique à la pagaie double en position assise.</p>
-						<p>Certaines formes modernes comportent toujours un trou appelé hiloire  servant à entrer dans le bateau.</p>
-						<p>Le kayak est parfois confondu avec le canoë, un type  d'embarcation distinct, la pratique sportive étant désignée par le terme général « canoë-kayak ».</p>
-						<p>La construction et la pratique contemporaines distinguent notamment le kayak de rivière, le kayak de vitesse en eaux calmes et le kayak de mer.</p>
-					</div>
 				</div>
 				<div id="galerie-kayak" class="col-6">
 					<div class="carousel js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true, "lazyLoad": "2" }'>
-						<div class="panneau"><img src="./galerie/image-1.jpg"></div>
-						<div class="panneau"><img src="./galerie/image-2.jpeg"></div>
-						<div class="panneau"><img src="./galerie/image-3.jpg"></div>
-						<div class="panneau"><img src="./galerie/image-4.jpg"></div>
-						<div class="panneau"><img src="./galerie/image-5.jpg"></div>
-						<div class="panneau"><img src="./galerie/image-6.jpg"></div>
-						<div class="panneau"><img src="./galerie/image-7.webp"></div>
-						<div class="panneau"><img src="./galerie/image-8.jpg"></div>
-						<div class="panneau"><img src="./galerie/image-9.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-1.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-2.jpeg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-3.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-4.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-5.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-6.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-7.webp"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-8.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-9.jpg"></div>
 					</div>
 				</div>
 				<div class="col-3" id="securite">
+					<br>
 					<h4>Consigne de sécurité</h4>
-					<img src="./gilet-sauvetage.jpg" alt="Sécurité" title="Gilet de sauvetage">
+					<img src="./public/kayak/gilet-sauvetage.jpg" alt="Sécurité" title="Gilet de sauvetage">
 				</div>
 			</div>
 		</section>
@@ -76,29 +68,35 @@
 			<div class="row">
 				<div id="galerie-kayak" class="col-12">
 					<div class="carousel js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true, "lazyLoad": "2" }'>
-						<div class="panneau"><img src="./galerie/image-1.jpg"></div>
-						<div class="panneau"><img src="./galerie/image-2.jpeg"></div>
-						<div class="panneau"><img src="./galerie/image-3.jpg"></div>
-						<div class="panneau"><img src="./galerie/image-4.jpg"></div>
-						<div class="panneau"><img src="./galerie/image-5.jpg"></div>
-						<div class="panneau"><img src="./galerie/image-6.jpg"></div>
-						<div class="panneau"><img src="./galerie/image-7.webp"></div>
-						<div class="panneau"><img src="./galerie/image-8.jpg"></div>
-						<div class="panneau"><img src="./galerie/image-9.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-1.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-2.jpeg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-3.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-4.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-5.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-6.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-7.webp"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-8.jpg"></div>
+						<div class="panneau"><img src="./public/kayak/galerie/image-9.jpg"></div>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Réservation -->
-		<section class="resa">
-			<a class="btn" href="./kayak-resa.html" role="button">Page de réservation</a>
-		</section>
+		<hero-bottom titre="Page de réservation" lien="./kayak-form.html">
+			<element>À l'origine, le kayak est inuit, confectionné avec des membrures ployées, bordées et pontées de peaux, et manœuvré à l'aide d'une pagaie simple ou double.</element>
+			<element>Aujourd'hui, un kayak est réalisé en toile imperméable, matériaux synthétique ou pneumatique et manœuvré avec une pagaie double.</element>
+			<element>À la différence du canoë ou canot, le kayak se pratique à la pagaie double en position assise.</element>
+			<element>Certaines formes modernes comportent toujours un trou appelé hiloire  servant à entrer dans le bateau.</element>
+			<element>Le kayak est parfois confondu avec le canoë, un type  d'embarcation distinct, la pratique sportive étant désignée par le terme général « canoë-kayak ».</element>
+			<element>La construction et la pratique contemporaines distinguent notamment le kayak de rivière, le kayak de vitesse en eaux calmes et le kayak de mer.</element>
+		</hero-bottom>
 
 		<!-- Pied de page -->
 		<pied-de-page></pied-de-page>
 
 		<!-- Script -->
 		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>

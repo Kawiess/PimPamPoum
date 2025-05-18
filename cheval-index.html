@@ -21,15 +21,17 @@
 
 		<!-- Composants -->
 		<script src="./component/navbar.js" type="text/javascript" defer></script>
+        <script src="./component/hero-top.js" type="text/javascript" defer></script>
+        <script src="./component/hero-bottom.js" type="text/javascript" defer></script>
 		<script src="./component/footer.js" type="text/javascript" defer></script>
     </head>
     <body>
         <menu-top></menu-top>
-        
-        <section class="hero">
-            <p class="text-center">Vivez la nature autrement: <br>à dos de cheval.</p>
-            <a href="./reservationCheval.html" class="btn btn-secondary-custom btn-lg">Réserver</a>
-        </section>
+        <hero-top
+            titre="Vivez la nature autrement: <br>à dos de cheval."
+            image="./public/cheval/hero001-8894.jpg"
+            lien="./cheval-form.html">
+        </hero-top>
 
         <section class="presentation">
             <div class="container py-5">
@@ -47,7 +49,7 @@
                 <!-- Guide Emma -->
                 <div class="guide-row">
                     <div class="guide-img">
-                        <img src="./Emma.jpg" alt="Emma et Nidguep">
+                        <img src="./public/cheval/Emma.jpg" alt="Emma et Nidguep">
                     </div>
                     <div class="guide-content">
                         <h3>Emma et Nidguep (Matin)</h3>
@@ -58,7 +60,7 @@
                 <!-- Guide Lucas -->
                 <div class="guide-row reverse">
                     <div class="guide-img">
-                        <img src="./Lucas.jpg" alt="Lucas et Papyrus">
+                        <img src="./public/cheval/Lucas.jpg" alt="Lucas et Papyrus">
                     </div>
                     <div class="guide-content">
                         <h3>Lucas et Papyrus (Après-midi)</h3>
@@ -68,24 +70,12 @@
             </div>
         </section>
 
-        <section class="resa">
-            <div class="container py-5">
-                <h2 class="text-center mb-4">Conditions de réservation</h2>
-                <div class="row">
-                    <div class="col-12 col-md-8 mx-auto">
-                        <ul class="conditions-list">
-                            <li>Réservation obligatoire d'une chambre au gîte</li>
-                            <li>Activité accessible à tous, débutants comme cavaliers confirmés</li>
-                            <li>En cas de pluie, la randonnée sera reportée pour votre sécurité</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="hero2">
-            <a href="./reservationCheval.html" class="btnCheval btn-secondary-custom btn-lg">Réserver</a>
-        </section>
+        <!-- Réservation Section -->
+        <hero-bottom titre="Conditions de réservation" lien="./cheval-form.html" image="./public/cheval/herofooter2.png">
+            <element>Réservation obligatoire d'une chambre au gîte.</element>
+            <element>Activité accessible à tous, débutants comme cavaliers confirmés.</element>
+            <element>En cas de pluie, la randonnée sera reportée pour votre sécurité.</element>
+        </hero-bottom>
 
         <pied-de-page></pied-de-page>
 

@@ -19,20 +19,32 @@
 		
 		<!-- Composants -->
 		<script src="./component/navbar.js" type="text/javascript" defer></script>
+		<script src="./component/hero-top.js" type="text/javascript" defer></script>
 		<script src="./component/footer.js" type="text/javascript" defer></script>
+
+		<style>
+			.bungjar-main {
+				background-image: url('./public/chambre/Bungalow-Jardin-01.png'); 
+				background-size: cover; /* Affiche l'image en entier */
+				background-repeat: no-repeat; /* Évite la répétition de l'image */
+				background-position: center; /* Centre l'image dans le bloc */
+			}
+			
+			.bungsea-main {
+				background-image: url('./public/chambre/Bungalow-Mer-01.png'); 
+				background-size: cover; /* Affiche l'image en entier */
+				background-repeat: no-repeat; /* Évite la répétition de l'image */
+				background-position: center; /* Centre l'image dans le bloc */
+			}
+		</style>
 	</head>
 	<body>
 		<menu-top></menu-top>
-		<!-- Contenu principal -->
-		<div class="main-hero p-5 text-center bg-image rounded-3">
-			<div class="d-flex flex-column justify-content-center align-items-start h-100">
-				<div class="text-white text-start">
-					<h1 class="mb-3 text-shadow text-white">Bienvenue au gîte Pim</h1>
-					<h4 class="mb-3 text-shadow text-white">Venez vous ressourcer dans un cadre idyllique.</h4>
-					<button type="button" class="btn-main btn-lg fs-5" onclick="window.location.href='modules/chambre/chambre-index.html';">Réservez</button>
-				</div>
-			</div>
-		</div>
+		<hero-top 
+			titre="Bienvenue au gîte Pim<br>Venez vous ressourcer dans un cadre idyllique."	
+			image="./public/accueil/hero-main.jpg"
+			lien="./chambre-form.html">
+		</hero-top>
 
 		<!-- Bungalows -->
 		<div>
@@ -43,13 +55,17 @@
 					<div class="main-item bungjar-main col-12 col-md-5 rounded">
 						<h1 class="ms-5 mb-3 mt-5 text-white text-shadow">Bungalow Jardin</h1>
 						<h4 class="ms-5 me-5 text-white text-shadow">Spacieux et confortables dans un cadre de verdoyant !</h4>
-						<button type="button" class="ms-5 btn-main btn-lg fs-5" onclick="window.location.href='modules/chambre/chambre-index.html';">Réservez</button>
+						<!--
+							<button type="button" class="ms-5 btn-main btn-lg fs-5" onclick="window.location.href='./chambre-index.html';">Réservez</button>
+						-->
 					</div>
 					<!-- Section côté mer -->
 					<div class="main-item bungsea-main col-12 col-md-5 rounded">
 						<h1 class="ms-5 mb-3 mt-5 text-white text-shadow">Bungalow Vue Mer</h1>
 						<h4 class="ms-5 me-5 text-white text-shadow">Laissez vous bercer par le son des vagues sur la terrasse</h4>
-						<button type="button" class="ms-5 btn-main btn-lg fs-5" onclick="window.location.href='modules/chambre/chambre-index.html';">Réservez</button>
+						<!--
+							<button type="button" class="ms-5 btn-main btn-lg fs-5" onclick="window.location.href='./chambre-index.html';">Réservez</button>
+						-->
 					</div>
 				</div>
 			</div>
@@ -77,7 +93,7 @@
 									<div class="row">
 										<div class="col-md-4 mb-3">
 											<div class="card">
-												<img class="img-fluid" alt="100%x280" src="public/carou-bagne.jpg"/>
+												<img class="img-fluid" alt="100%x280" src="./public/accueil/carou-bagne.jpg"/>
 												<div class="card-body">
 													<h4 class="card-title">Visite du bagne</h4>
 													<p class="card-text">Replongez avec notre guide dans l'histoire du pays sur l'île de Pam</p>
@@ -87,7 +103,7 @@
 										</div>
 										<div class="col-md-4 mb-3">
 											<div class="card">
-												<img class="img-fluid" alt="100%x280" src="public/carou-cheval.jpg"/>
+												<img class="img-fluid" alt="100%x280" src="./public/accueil/carou-cheval.jpg"/>
 												<div class="card-body">
 													<h4 class="card-title">Randonnée équestre</h4>
 													<p class="card-text">De belles balades dans la nature avec notre guide. À ne pas manquer !</p>
@@ -97,7 +113,7 @@
 										</div>
 										<div class="col-md-4 mb-3">
 											<div class="card">
-												<img class="img-fluid" alt="100%x280" src="public/carou-gard.jpg"/>
+												<img class="img-fluid" alt="100%x280" src="./public/accueil/carou-gard.jpg"/>
 												<div class="card-body">
 													<h4 class="card-title">Notre garderie</h4>
 													<p class="card-text">Afin de réaliser les activités non accessibles aux enfants, confiez-nous vos enfants</p>
@@ -111,7 +127,7 @@
 									<div class="row">
 										<div class="col-md-4 mb-3">
 											<div class="card">
-												<img class="img-fluid" alt="100%x280" src="public/carou-kayak.jpg"/>
+												<img class="img-fluid" alt="100%x280" src="./public/accueil/carou-kayak.jpg"/>
 												<div class="card-body">
 													<h4 class="card-title">Club nautique</h4>
 													<p class="card-text">Balades détente ou sportive en kayak sur le lagon. Détente ou actif, à vous de choisir !</p>
@@ -121,7 +137,7 @@
 										</div>
 										<div class="col-md-4 mb-3">
 											<div class="card">
-												<img class="img-fluid" alt="100%x280" src="public/carou-repas.jpg"/>
+												<img class="img-fluid" alt="100%x280" src="./public/accueil/carou-repas.jpg"/>
 												<div class="card-body">
 													<h4 class="card-title">Restaurant Pim</h4>
 													<p class="card-text">Pour les gourmets et les gourmands, notre carte saura vous ravir !</p>
@@ -131,7 +147,7 @@
 										</div>
 										<div class="col-md-4 mb-3">
 											<div class="card">
-												<img class="img-fluid" alt="100%x280" src="public/carou-bung.jpg"/>
+												<img class="img-fluid" alt="100%x280" src="./public/accueil/carou-bung.jpg"/>
 												<div class="card-body">
 													<h4 class="card-title">Nos bungalows</h4>
 													<p class="card-text">Jardin ou vue mer, choisissez votre bungalow idéal pour votre séjour</p>
@@ -163,7 +179,7 @@
 					<div class="col-md-4 mb-4">
 						<div class="card">
 							<div class="card-body text-center">
-								<img src="modules/repas/img-resto/avatar1.png" class="rounded-circle mb-3" alt="Client Avatar"/>
+								<img src="./public/repas/avatar1.png" class="rounded-circle mb-3" alt="Client Avatar"/>
 								<h5 class="card-title">Billy Gaytes</h5>
 								<p class="card-text text-muted">USA, Chicago</p>
 								<p class="card-text">Notre séjour était fantastique ! Wonderful ! I'll be back, c'est certain !"</p>
@@ -180,7 +196,7 @@
 					<div class="col-md-4 mb-4">
 						<div class="card">
 							<div class="card-body text-center">
-								<img src="modules/repas/img-resto/avatar2.png" class="rounded-circle mb-3" alt="Client Avatar"/>
+								<img src="./public/repas/avatar2.png" class="rounded-circle mb-3" alt="Client Avatar"/>
 								<h5 class="card-title">Elsa Gorithme</h5>
 								<p class="card-text text-muted">France, Nice</p>
 								<p class="card-text">"Le personnel du gîte était au top et la qualité de la literie est exceptionnelle !"</p>
@@ -197,7 +213,7 @@
 					<div class="col-md-4 mb-4">
 						<div class="card">
 							<div class="card-body text-center">
-								<img src="modules/repas/img-resto/avatar3.png" class="rounded-circle mb-3" alt="Client Avatar"/>
+								<img src="./public/repas/avatar3.png" class="rounded-circle mb-3" alt="Client Avatar"/>
 								<h5 class="card-title">Olivia Jax</h5>
 								<p class="card-text text-muted">Vanuatu, Port-Vila</p>
 								<p class="card-text">"Incroyable site et le personnel était merveilleux. Je reviendrai !"</p>

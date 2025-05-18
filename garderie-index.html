@@ -20,111 +20,112 @@
 		
 		<!-- Composants -->
 		<script src="./component/navbar.js" type="text/javascript" defer></script>
+		<script src="./component/hero-top.js" type="text/javascript" defer></script>
+		<script src="./component/hero-bottom.js" type="text/javascript" defer></script>
 		<script src="./component/footer.js" type="text/javascript" defer></script>
 	</head>
-<body>
-	<menu-top></menu-top>
-	<section class="hero bg-image" >
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6  col-md-12 col-sm-3 bg-primary rounded-2 mt-2 me-5">
-					Besoin une excursion entre entre amoureux ou d’un moment de calme ?<br>
-					Notre équipe serra heurese de prendre en charge vos petites ! <br>
-					<a class="btn btn-primary my-2 fs-4 col-12" href="./garderie-form.html">Réservez en garderie</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="activite">
-		<div class="container">
-			<div class="row  mx-auto">
-				<div class="col-lg-4 col-sm-3 col-md-12 text-center m-2 fs-4 mx-auto">
-					<ul class="list-group list-group-flush text-start border rounded-2">
-						<li class="list-group-item text-center">De nombreuses activitées </li>
-						<li class="list-group-item">Course de sac</li>
-						<li class="list-group-item">Visite des lieux</li>
-						<li class="list-group-item">Dessins</li>
-						<li class="list-group-item">Siestes</li>
-						<li class="list-group-item">Cahier de vacances</li>
-					</ul>
-				</div>
-				<div class="col-lg-6 col-md-12 col-sm-12 text-center m-2 fs-4">
-					<img src="../../public/1280px-Fallujah_sack_race.jpg" class="rounded mx-auto d-block been-race" alt="Course de sac">
-				</div>
-			</div>	
-			<div class="row text-center m-3">
-				<h2>Notre équipe de passionnés saura encadrer vos enfants</h2>
-			</div>
-			<div class="row">
-				<div class="col-lg-6 col-sm-12 text-center ">
-					<div class="card">
-						<img src="../../public/woman-showing-colored-picture.jpg" class="card-img-top"
-							alt="Accompagnante pour enfant">
-						<div class="card-body">
-							<h5>Julie</h5>
-							<p class="card-text">
-								Bonjour, je travaille aujourd'hui dans la garderie de ce gîte. Ancienne puéricultrice,
-								j'ai passé plusieurs années à accompagner les tout-petits dans leurs premiers pas.
-								J'adore organiser des activités ludiques en plein air dans notre magnifique gite.
-								Au plaisir de vous rencontrer et de partager ces moments uniques avec vos petits
-								trésors.
-							</p>
-						</div>
+	<body>
+		<menu-top></menu-top>
+		<hero-top
+			titre="Besoin d'une excursion entre amoureux ou d’un moment de calme ?<br>Notre équipe serra heureuse de prendre en charge vos petits !"
+			image="./public/garderie/children-1547261_1920.jpg"
+			lien="./garderie-form.html">
+		</hero-top>
+
+		<!-- ? -->
+		<section class="activite">
+			<div class="container">
+				<div class="row  mx-auto">
+					<div class="col-lg-4 col-sm-3 col-md-12 text-center m-2 fs-4 mx-auto">
+						<ul class="list-group list-group-flush text-start border rounded-2">
+							<li class="list-group-item text-center">De nombreuses activités</li>
+							<li class="list-group-item">Course de sac</li>
+							<li class="list-group-item">Visite des lieux</li>
+							<li class="list-group-item">Dessins</li>
+							<li class="list-group-item">Siestes</li>
+							<li class="list-group-item">Cahier de vacances</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-12 col-sm-12 text-center m-2 fs-4">
+						<img src="./public/garderie/1280px-Fallujah_sack_race.jpg" class="rounded mx-auto d-block been-race" alt="Course de sac">
 					</div>
 				</div>	
-				<div class="col-lg-6 col-sm-12 text-center ">
-					<div class="card">
-						<img src="../../public/old-teacher.jpg" class="card-img-top"
-							alt="Une ancienne professeur aide un élève">
-						<div class="card-body">
-							<h5>Emilie</h5>
-							<p class="card-text">
-								Ancienne professeure de collège,
-								j'ai passé plusieurs années à transmettre des connaissances et soutenir les
-								enfants pendant leurs apprentissages.
-								Je propose des activités ludiques et éducatives pour rendre l’apprentissage et
-								amusant.
-								Au plaisir de vous accueillir et de partager ces instants précieux avec vos
-								jeunes explorateurs !
-							</p>
+				<div class="row text-center m-3">
+					<h2>Notre équipe de passionnés saura encadrer vos enfants</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-sm-12 text-center ">
+						<div class="card">
+							<img src="./public/garderie/woman-showing-colored-picture.jpg" class="card-img-top"
+								alt="Accompagnante pour enfant">
+							<div class="card-body">
+								<h5>Julie</h5>
+								<p class="card-text">
+									Bonjour, je travaille aujourd'hui dans la garderie de ce gîte. Ancienne puéricultrice,
+									j'ai passé plusieurs années à accompagner les tout-petits dans leurs premiers pas.
+									J'adore organiser des activités ludiques en plein air dans notre magnifique gite.
+									Au plaisir de vous rencontrer et de partager ces moments uniques avec vos petits
+									trésors.
+								</p>
+							</div>
+						</div>
+					</div>	
+					<div class="col-lg-6 col-sm-12 text-center ">
+						<div class="card">
+							<img src="./public/garderie/old-teacher.jpg" class="card-img-top"
+								alt="Une ancienne professeur aide un élève">
+							<div class="card-body">
+								<h5>Emilie</h5>
+								<p class="card-text">
+									Ancienne professeure de collège,
+									j'ai passé plusieurs années à transmettre des connaissances et soutenir les
+									enfants pendant leurs apprentissages.
+									Je propose des activités ludiques et éducatives pour rendre l’apprentissage et
+									amusant.
+									Au plaisir de vous accueillir et de partager ces instants précieux avec vos
+									jeunes explorateurs !
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	<section class="resa">
-		<div class="container">
-			<div class="row m-3">
-				<div class="col fs-2 border-bottom border-top text-center m-5" >
-					Notre service de garderie est ouvert tout les jours a toutes les heures: 
+		</section>
+
+		<!-- Réservation ? -->
+		<section class="resa">
+			<div class="container">
+				<div class="row m-3">
+					<div class="col fs-2 border-bottom border-top text-center m-5" >
+						Nécessaire pour toutes inscriptions : 
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-12 fs-5 ">
-					<ul class="list-group list-group-flush border-end border-start text-start"">
-						<li class="list-group-item fs-3">Néccésaire pour toutes inscriptions</li>
-						<li class="list-group-item">Un numéro de réservation</li>
-						<li class="list-group-item">Un numéro de chambre</li>
-						<li class="list-group-item">heure de début</li>
-						<li class="list-group-item">Heure de fin</li>
-						<li class="list-group-item">Une histoire pour votre tésort</li>
-					</ul>
+				<div class="row">
+					<div class="col-lg-6 col-md-12 fs-5 ">
+						<ul class="list-group list-group-flush border-end border-start text-start">
+							<li class="list-group-item">Un numéro de réservation</li>
+							<li class="list-group-item">Un numéro de chambre</li>
+							<li class="list-group-item">Heure de début</li>
+							<li class="list-group-item">Heure de fin</li>
+							<li class="list-group-item">Une histoire pour votre trésor</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-12">
+						<img src="./public/garderie/Garderie dessin.png" class="img-fluid dessin" alt="dessin d'enfant">
+					</div>	
 				</div>
-				<div class="col-lg-4 col-md-12">
-					<img src="../../public/Garderie dessin.png" class="img-fluid dessin" alt="dessin d'enfant">
-				</div>
-				<div class="col-lg-4 col-md-12 text-center">
-					<ul class="list-group list-group-flush border-end border-start mt-5">
-						<li class="list-group-item fs-3 text-info">15 places<br>maximum</li>
-						<a href="./garderie-form.html" class="btn btn-primary fs-2 mb-2" href="./garderie-form.html">Réserver un crénau</a>
-					</ul>
-				</div>
-			</div>
-		</div>			
-	</section>
-	<pied-de-page></pied-de-page>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-		crossorigin="anonymous"></script>
-</body>
+			</div>			
+		</section>
+
+		<!-- Réservation Section -->
+		<hero-bottom titre="Réserver un créneau" lien="./garderie-form.html">
+			<element>Notre service de garderie est ouvert tout les jours a toutes les heures.</element>
+			<element>15 places maximum.</element>
+			<element>De nombreuses activités.</element>
+			<element>Notre équipe de passionnés saura encadrer vos enfants.</element>
+		</hero-bottom>
+
+		<pied-de-page></pied-de-page>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>

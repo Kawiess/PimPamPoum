@@ -4,8 +4,8 @@
 
 - Adresse du site : [Gîte Pim](https://kawiess.github.io/PimPamPoum/)
 - Cahier de recettage : 
-	- [Global](./Recettage_Global.md)
-	- [Individuel](./Recettage_Individuel.md)
+	- [Global](./private/Recettage_Global.md)
+	- [Individuel](./private//Recettage_Individuel.md)
 - Galerie d'Emoji : [Emojis](https://emojis.wiki/)
 
 ---

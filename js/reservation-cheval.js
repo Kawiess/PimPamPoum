@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Configuration de la date minimum (aujourd'hui)
     const today = new Date().toISOString().split('T')[0];
     dateInput.min = today;
+    dateInput.value = today;
 
     // Fonction pour mettre à jour la météo selon la date
     function updateMeteo(selectedDate) {

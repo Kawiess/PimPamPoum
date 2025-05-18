@@ -1,0 +1,41 @@
+
+
+    +--------------------------------------------------------------------------------------+
+    | LOGO PIM PAM POUM                     [Chambre]  [Restaurant]  [Randonnée Équestre]  |
+    | (cliquez sur le logo pour revenir)    [Kayak]  [Visite du Bagne]  [Garderie]         |
+    +--------------------------------------------------------------------------------------+
+    |                                                                                      |
+    |                          	 BIENVENUE CHEZ PIM PAM POUM !                         	   |
+    |                                                                                      |
+    |         ┌────────────────────────────────────────────────────────────────┐           |
+    |         │                                                                │           |
+    |         │    [ Illustration d’ambiance : nature, enfants, détente ]      │           |
+    |         │                                                                │           |
+    |         └────────────────────────────────────────────────────────────────┘           |
+    |                                                                                      |
+    |   Nos expériences à découvrir :                                                      |
+    |                                                                                      |
+    |   ┌──────────────┐ ┌──────────────┐ ┌──────────────┐                                 |
+    |   │ Chambre      │ │ Restaurant   │ │ Kayak        │                                 |
+    |   └──────────────┘ └──────────────┘ └──────────────┘                                 |
+    |                                                                                      |
+    |   ┌────────────────────┐ ┌──────────────────────┐ ┌──────────────┐                   |
+    |   │ Rando Équestre     │ │ Visite du Bagne      │ │ Garderie     │                   |
+    |   └────────────────────┘ └──────────────────────┘ └──────────────┘                   |
+    |                                                                                      |
+    |    Cliquez sur une section pour explorer nos activités ou réserver directement       |
+    |                                                                                      |
+    |   ---------------------------------[ AVIS CLIENTS ]--------------------------------  |
+    |                                                                                      |
+    | “Une expérience inoubliable pour toute la famille !” – Claire L.     				   |
+    | “Les enfants ont adoré la garderie pendant notre balade en kayak !” – Yann R. 	   |
+    | “Accueil chaleureux, super resto et cadre magnifique.” – Fatou S.         		   |
+    |                                                                                      |
+    +--------------------------------------------------------------------------------------+
+    |  Pied de page :                                                                      |
+    | ------------------------------------------------------------------------------------ |
+    |  © 2025 PimPamPoum | contact@pimpampoum.nc                                           |
+    |  Suivez-nous : [Instagram] [Facebook]                                                |
+    |  Mentions légales | Politique de confidentialité | Plan du site | FAQ                |
+    +--------------------------------------------------------------------------------------+
+

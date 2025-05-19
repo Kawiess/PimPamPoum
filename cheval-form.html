@@ -1,23 +1,104 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8">
-        <title>Réservation Randonnée Équestre - Gîte Pim</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" media="screen" href="./reservationCheval.css">
-        <link rel="stylesheet" media="screen" href="../../css/main.css">
-        <link rel="icon" type="image/x-icon" href="../../public/logo.ico">
-        <!-- Bootstrap 5 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <meta charset="utf-8" />
+		<title>Réservation - Randonnée équestre</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Site du gîte de Pim sur l'île de Pam près de Poum.">
+		<meta name="author" content="GBL">
+		<meta name="robots" content="index, follow">
+		
+		<!-- Styles internes -->
+		<link rel="icon" type="image/x-icon" href="./public/logo/logo.ico" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/reservationCheval.css">
+
+		<!-- Styles externes -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <script src="../../js/navbar.js" type="text/javascript" defer></script>
-        <script src="../../js/footer.js" type="text/javascript" defer></script>
+		
+		<!-- Composants -->
+		<script src="./component/navbar.js"   type="text/javascript" defer></script>
+		<script src="./component/hero-top.js" type="text/javascript" defer></script>
+		<script src="./component/footer.js"   type="text/javascript" defer></script>
     </head>
     <body>
         <menu-top></menu-top>
-        <section class="hero2">
+        <!-- Section chevaux -->
+        <section class="reservation">
+            <div class="container">
+                <h3 class="text-center mt-5 mb-4">Sélectionnez votre compagnon de route</h3>
+                <div class="horses-grid">
+                    <div class="horse-card">
+                        <img src="./public/cheval/Apache.jpg" alt="Apache">
+                        <p>Apache</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Mustang.jpg" alt="Mustang">
+                        <p>Mustang</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Sahara.jpg" alt="Sahara">
+                        <p>Sahara</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Comete.jpg" alt="Comète">
+                        <p>Comète</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Eclair.jpg" alt="Eclair">
+                        <p>Eclair</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Paillette.jpg" alt="Paillette">
+                        <p>Paillette</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Kone.jpg" alt="Koné">
+                        <p>Koné</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Confiture.jpg" alt="Confiture">
+                        <p>Confiture</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Foster.jpg" alt="Foster">
+                        <p>Foster</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Iananoui.jpg" alt="Inanouï">
+                        <p>Inanouï</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Prince.jpg" alt="Prince">
+                        <p>Prince</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Buster.jpg" alt="Buster">
+                        <p>Buster</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Charly.jpg" alt="Charly">
+                        <p>Charly</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Sao.jpg" alt="Sao">
+                        <p>Sao</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Tim.jpg" alt="Tim">
+                        <p>Tim</p>
+                    </div>
+                    <div class="horse-card">
+                        <img src="./public/cheval/Tam.jpg" alt="Tam">
+                        <p>Tam</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        
+
         <section class="reservation">
             <div class="container">
                 <div class="row">
@@ -81,75 +162,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Section chevaux -->
-                <h3 class="text-center mt-5 mb-4">Sélectionnez votre compagnon de route</h3>
-                <div class="horses-grid">
-                    <div class="horse-card">
-                        <img src="./Apache.jpg" alt="Apache">
-                        <p>Apache</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Mustang.jpg" alt="Mustang">
-                        <p>Mustang</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Sahara.jpg" alt="Sahara">
-                        <p>Sahara</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Comete.jpg" alt="Comète">
-                        <p>Comète</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Eclair.jpg" alt="Eclair">
-                        <p>Eclair</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Paillette.jpg" alt="Paillette">
-                        <p>Paillette</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Kone.jpg" alt="Koné">
-                        <p>Koné</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Confiture.jpg" alt="Confiture">
-                        <p>Confiture</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Foster.jpg" alt="Foster">
-                        <p>Foster</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Iananoui.jpg" alt="Inanouï">
-                        <p>Inanouï</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Prince.jpg" alt="Prince">
-                        <p>Prince</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Buster.jpg" alt="Buster">
-                        <p>Buster</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Charly.jpg" alt="Charly">
-                        <p>Charly</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Sao.jpg" alt="Sao">
-                        <p>Sao</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Tim.jpg" alt="Tim">
-                        <p>Tim</p>
-                    </div>
-                    <div class="horse-card">
-                        <img src="./Tam.jpg" alt="Tam">
-                        <p>Tam</p>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -157,6 +169,6 @@
 
         <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="./reservation.js"></script>
+        <script src="./js/reservation-cheval.js"></script>
     </body>
 </html>

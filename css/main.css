@@ -135,7 +135,7 @@ header {
 
 /* CAROUSEL */
 .btn-main-small {
-    background-color: #FE8A24; 
+    background-color: var(--secondary); 
     padding: 4px 15px; 
     border-radius: 80px; 
     color: white; 

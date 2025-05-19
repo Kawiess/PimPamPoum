@@ -1,4 +1,6 @@
 // Initialisation.
+let NumeroChambre = document.getElementById('numero_chambre');
+NumeroChambre.setAttribute("value", "CH24120026");
 let today = new Date();
 let max   = new Date();
 today.setDate(today.getDate() + 1);

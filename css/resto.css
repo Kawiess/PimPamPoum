@@ -4,21 +4,21 @@
 }
 
 .resto-hero {
-    background-image: url('../modules/repas/img-resto/pim-resto-hero.jpg'); 
+    background-image: url('./repas/pim-resto-hero.jpg'); 
     background-size: cover; 
     background-position: center; 
     height: 70vh;
 }
 
 .resto-resa-hero {
-  background-image: url('../modules/repas/img-resto/resa-hero.jpg'); 
+  background-image: url('./repas/resa-hero.jpg'); 
   background-size: cover; 
   background-position: center; 
   height: 70vh;
 }
 
 .resto-bar {
-    background-image: url('../modules/repas/img-resto/bar.webp'); 
+    background-image: url('./repas/bar.webp'); 
     background-size: cover; 
     background-position: center; 
     height: 70vh;
@@ -101,7 +101,7 @@ height: 60vh;
 }
 
 #form {
-  background-image: url('../modules/repas/img-resto/fond-resa.jpg'); 
+  background-image: url('./repas/fond-resa.jpg'); 
   background-size: cover; 
   background-position: center; 
   height: 100vh;

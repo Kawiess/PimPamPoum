@@ -101,7 +101,7 @@ height: 60vh;
 }
 
 #form {
-  background-image: url('./repas/fond-resa.jpg'); 
+  background-image: url('./public/repas/fond-resa.jpg'); 
   background-size: cover; 
   background-position: center; 
   height: 100vh;
